@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="header">
+    <h1>Library of Alexandria</h1>
+    <button class="Button Button--dark" id="add-open-modal">
+        New Book +
+      </button>
+    </div>
+
+      <dialog id="dialog">
+        <div class="addNewBook">
+        <h3>Add a new book</h3>
+      </div>
+        <form>
+
+            <div class="titleClass">
+            <label for="title">Title:</label>
+            <input type="text" id="title" size="20"  value="" required>
+          </div>
+
+            <div class="authorClass">
+            <label for="author">Author:</label>
+            <input type="text" id="author" size="20" value="" required>
+          </div>
+
+            <div class="pagesClass">
+            <label for="pages">Pages</label>
+            <input type="number" id="pages" size="15" required value="">
+          </div>
+        
+
+            <div class="questionClass">
+              <h5>Have you read it ?</h5>
+            </div>
+            <div class="radioClass">
+
+              <div class="radioYes">
+              <label for="not Read">Yes:</label>
+            <input type="radio" id="read" value="read" value="" name="radiobutton" required>
+          </div>
+          
+
+            
+
+          <div class="radioNo">
+            <label for="not Read">No:</label>
+            <input type="radio" id="notRead" value="notRead" value="" name="radiobutton">
+          </div>
+          </div>
+      
+        
+            
+            <input type="submit" id="submit" value="Add to Library" onclick="getDetails(event)">
+        
+        </form>
+  
+          <!-- <button class="Button Button--success" type="submit">Submit</button> -->
+          <div class="closeClass">
+          <button class="Button Button--danger" type="button" id="close-button">
+            X
+          </button>
+        </div>
+        </form>
+      </dialog>
+
+    
+
+   
+
+    <div class="container">
+        
+    </div>
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>

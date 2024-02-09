@@ -1,0 +1,181 @@
+html,body{
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  /* background-color: black; */
+}
+
+.container{
+  height: 800px;
+  margin-top: 15px;
+  display: grid;
+  grid-template-rows: repeat(15, 3fr);
+  grid-template-columns: repeat(5, 3fr);
+  grid-auto-rows: 380px;
+  grid-auto-columns: 380px;
+  row-gap: 100px;
+  column-gap: 10px;
+  padding: 0px 18px;
+  /* border: 10px solid red; */
+
+}
+
+.container>div {
+    width: 240px;
+    height: 290px;
+    border-radius: 4px;
+    /* border: 10px solid red; */
+    text-align: center;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+ .container>div>h1,h3,h2,h4,p,h5{
+    margin: 4px;
+  }
+
+  form{
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    /* gap: 15px; */
+  }
+
+  #dialog{
+    border-radius: 5px;
+    width: 400px;
+    align-items: center;
+    box-shadow: 0px 5px lightgray;
+
+    /* text-align: center; */
+  }
+
+  .radioClass{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 12px;
+  }
+
+  .questionClass{
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+    /* border: 10px solid red; */
+    height: 20px;
+  }
+
+  .radioYes{
+    display: flex;
+    /* border: 10px solid red; */
+    width: 90px;
+  }
+
+  .pagesClass,.authorClass,.titleClass{
+    display: flex;
+    flex-direction: column;
+    /* border: 10px solid red; */
+    gap: 5px;
+    margin-bottom: 12px;
+    width: 350px;
+    padding: 0px 15px 0px 15px;
+  }
+
+  #author,#title,#pages{
+    border-radius: 5px;
+    height: 30px;
+  }
+
+  #submit{
+    margin-bottom: 10px;
+    height: 35px;
+    border-radius: 9px;
+    background-color:rgb(0, 246, 20) ;
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+  }
+
+  #submit:hover{
+    background-color: black;
+    color: white;
+  }
+
+  .closeClass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+
+  #close-button{
+    width: 60px;
+    height: 35px;
+    color: azure;
+    background-color: rgb(255, 68, 0);
+    font-weight: bold;
+    border-radius: 9px;
+  }
+
+  #close-button:hover{
+    background-color: rgb(244, 244, 244);
+    color: black;
+  }
+
+  .addNewBook{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 0px 45px;
+  }
+
+  #add-open-modal{
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+  }
+
+  #add-open-modal:hover{
+    background-color: white;
+    color: black;
+  }
+
+  .bookSettingButton{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 16px;
+    /* border: 10px solid red; */
+  }
+
+  .deleteButton{
+    height: 40px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(250, 70, 70);
+  }
+
+  .deleteButton:hover{
+    background-color: white;
+    color: black;
+  }
+
+  .changeButton{
+    height: 40px;
+    background-color: antiquewhite;
+    color: black;
+    font-weight: bold;
+  }
+
+  .changeButton:hover{
+    background-color: gray;
+  }
